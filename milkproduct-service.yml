@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: milkproduct-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/the96farm-milkproducts
+  cloud:
+    config:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
